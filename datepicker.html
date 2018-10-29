@@ -1,0 +1,13 @@
+<div class="input-group">
+    <input type="text" class="form-control" style="padding: 4px; cursor: default;" readonly 
+    placeholder="Date in format: {{dateOptions.format}}"
+    uib-datepicker-popup="{{dateOptions.format}}"
+    ng-model="namedp"
+    is-open="dateOptions.openCloseStatus"
+    datepicker-options="dateOptions"
+    ng-required="true" 
+    close-text="Close">
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-default" ng-click="openClose()"><i class="glyphicon glyphicon-calendar"></i></button>
+    </span>
+</div>
