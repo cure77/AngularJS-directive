@@ -24,15 +24,16 @@
 
         <div class="row">
             <div class="col-md-2">
-
-                <div fsm-date-picker namedp="formData.dt.begin"></div>
-
-
-                <div fsm-date-picker namedp="formData.dt.end"></div>
+                <div fsm-date-picker namedp="formData.dt.begin" requiredp="true" modedp="viewEdit"></div>                
             </div>
         </div>
-
-        
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div fsm-date-picker-range namedpfrom="formData.dt.begin" namedpto="formData.dt.end" requiredp="true" modedp="viewEdit"></div>                
+            </div>
+        </div>
+            
 
     </div>
     

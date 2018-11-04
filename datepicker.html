@@ -1,4 +1,5 @@
-<div class="input-group">
+<div class="input-group col-sm-12">
+    <small class="label label-danger" ng-if="requiredp && modedp!='view' && !namedp" style="position: absolute; right: 15%; margin-top: 0%; z-index: 3;">required</small>
     <input type="text" class="form-control" style="padding: 4px; cursor: default;" readonly 
     placeholder="Date in format: {{dateOptions.format}}"
     uib-datepicker-popup="{{dateOptions.format}}"
@@ -7,7 +8,7 @@
     datepicker-options="dateOptions"
     ng-required="true" 
     close-text="Close">
-    <span class="input-group-btn">
+    <span class="input-group-btn" ng-if="modedp=='edit' || modedp=='new'">
         <button type="button" class="btn btn-default" ng-click="openClose()"><i class="glyphicon glyphicon-calendar"></i></button>
     </span>
 </div>
