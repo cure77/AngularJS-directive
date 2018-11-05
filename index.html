@@ -33,8 +33,19 @@
                 <div fsm-date-picker-range namedpfrom="formData.dt.begin" namedpto="formData.dt.end" requiredp="true" modedp="viewEdit"></div>                
             </div>
         </div>
-            
+        
+        <div ng-repeat="user in users">
+            <label>
+                {{user.name}}
+                <input type="radio" name="user" ng-model="formData.user_selected" ng-value="user.id">
+            </label>
+        </div>
+        
 
+        <button ng-click="checkFormVal()" class="btn btn-danger btn-xs pull-right">
+            check form values
+        </button>
+        
     </div>
     
 </body>

@@ -11,6 +11,18 @@ angular.module('app').controller('directivesCtrl', function ($scope) {
 		}
 	};
 
+	$scope.users = [
+		{id: 1, name:'ljuba'},
+		{id: 2, name:'chris'},
+		{id: 3, name:'rob'},
+
+	];
+
+	$scope.checkFormVal = function(){
+		$scope;
+		debugger;
+	}
+
 });
 
 
